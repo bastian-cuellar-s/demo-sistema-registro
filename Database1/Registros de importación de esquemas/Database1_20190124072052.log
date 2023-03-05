@@ -1,0 +1,78 @@
+24/01/2019 16:20:52	Este registro contiene información acerca de la operación de importación de esquema en el proyecto 'Database1' del equipo 'LAPTOP-2FM3S7O1' por el usuario 'Bastian'.
+24/01/2019 16:20:52	Se inició la importación del esquema de la base de datos.
+24/01/2019 16:21:09	Recopilando opciones de base de datos
+24/01/2019 16:21:09	Recopilando usuarios
+24/01/2019 16:21:09	Recopilando roles
+24/01/2019 16:21:09	Recopilando roles de aplicación
+24/01/2019 16:21:09	Recopilando pertenencias a roles
+24/01/2019 16:21:09	Recopilando grupos de archivos
+24/01/2019 16:21:09	Recopilando catálogos de texto completo
+24/01/2019 16:21:09	Recopilando ensamblados
+24/01/2019 16:21:09	Recopilando certificados
+24/01/2019 16:21:09	Recopilando claves asimétricas
+24/01/2019 16:21:09	Recopilando claves simétricas
+24/01/2019 16:21:09	Recopilando claves simétricas cifradas
+24/01/2019 16:21:09	Recopilando esquemas
+24/01/2019 16:21:09	Recopilando colecciones de esquemas XML
+24/01/2019 16:21:09	Recopilando tipos de datos definidos por el usuario
+24/01/2019 16:21:09	Recopilando tipos definidos por el usuario
+24/01/2019 16:21:09	Recopilando tipos de tabla
+24/01/2019 16:21:09	Recopilando claves únicas para tipos de tabla
+24/01/2019 16:21:09	Recopilando claves principales para tipos de tabla
+24/01/2019 16:21:09	Recopilando índices para tipos de tablas
+24/01/2019 16:21:09	Recopilando restricciones CHECK para tipos de tabla
+24/01/2019 16:21:09	Recopilando restricciones DEFAULT para tipos de tabla
+24/01/2019 16:21:09	Recopilando funciones de partición
+24/01/2019 16:21:09	Recopilando esquemas de partición
+24/01/2019 16:21:09	Recopilando funciones
+24/01/2019 16:21:09	Recopilando funciones cifradas
+24/01/2019 16:21:09	Recopilando agregados
+24/01/2019 16:21:09	Recopilando procedimientos
+24/01/2019 16:21:09	Recopilando procedimientos cifrados
+24/01/2019 16:21:09	Recopilando tablas
+24/01/2019 16:21:09	Recopilando claves principales
+24/01/2019 16:21:09	Recopilando restricciones UNIQUE
+24/01/2019 16:21:09	Recopilando claves externas
+24/01/2019 16:21:09	Recopilando restricciones DEFAULT
+24/01/2019 16:21:09	Recopilando restricciones CHECK
+24/01/2019 16:21:09	Recopilando vistas
+24/01/2019 16:21:09	Recopilando vistas cifradas
+24/01/2019 16:21:09	Recopilando índices
+24/01/2019 16:21:09	Recopilando estadísticas
+24/01/2019 16:21:09	Recopilando listas de palabras irrelevantes de índices de texto completo
+24/01/2019 16:21:09	Recopilando listas de propiedades de búsqueda
+24/01/2019 16:21:09	Recopilando propiedades de búsqueda
+24/01/2019 16:21:09	Recopilando índices de texto completo
+24/01/2019 16:21:09	Recopilando índices de almacenamiento de columnas
+24/01/2019 16:21:09	Recopilando índices espaciales
+24/01/2019 16:21:09	Recopilando índices XML
+24/01/2019 16:21:09	Recopilando índices XML selectivos
+24/01/2019 16:21:09	Recopilando desencadenadores cifrados
+24/01/2019 16:21:09	Recopilando desencadenadores
+24/01/2019 16:21:09	Recopilando DDL triggers cifrados y de CLR
+24/01/2019 16:21:09	Recopilando DDL triggers
+24/01/2019 16:21:09	Recopilando sinónimos
+24/01/2019 16:21:09	Recopilando valores predeterminados
+24/01/2019 16:21:09	Recopilando enlaces UDDT de restricción de datos
+24/01/2019 16:21:09	Recopilando reglas
+24/01/2019 16:21:09	Recopilando enlaces UDDT de restricción de datos
+24/01/2019 16:21:09	Recopilando tipos de mensaje
+24/01/2019 16:21:09	Recopilando colas
+24/01/2019 16:21:09	Recopilando contratos
+24/01/2019 16:21:09	Recopilando servicios
+24/01/2019 16:21:09	Recopilando notificaciones de eventos
+24/01/2019 16:21:09	Recopilando enlaces de servicio remoto
+24/01/2019 16:21:09	Recopilando prioridades de Broker
+24/01/2019 16:21:09	Recopilando firmas
+24/01/2019 16:21:09	Recopilando opciones de compresión de datos
+24/01/2019 16:21:09	Recopilando tipos de secuencia
+24/01/2019 16:21:09	Recopilando permisos de base de datos
+24/01/2019 16:21:09	Recopilando propiedades extendidas
+24/01/2019 16:21:10	Recopilando credenciales
+24/01/2019 16:21:10	Recopilando inicios de sesión
+24/01/2019 16:21:10	Recopilando auditorías de servidor
+24/01/2019 16:21:11	Buscando elementos duplicados en el proyecto
+24/01/2019 16:21:12	Ha finalizado el procesamiento de los elementos duplicados
+24/01/2019 16:21:13	Finalizó la importación de la base de datos.
+24/01/2019 16:21:13	Se guardó un resumen de la importación en la siguiente ubicación: C:\Users\Bastian\source\repos\SisSara\Database1\Registros de importación de esquemas\Database1_20190124072052.log
+24/01/2019 16:21:13	Haga clic en Finalizar para continuar...

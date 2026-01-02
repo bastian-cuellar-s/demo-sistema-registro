@@ -103,6 +103,9 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1500, 727);
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
@@ -169,6 +172,7 @@
             this.btnConfiguracionDB.Location = new System.Drawing.Point(1362, 34);
             this.btnConfiguracionDB.Name = "btnConfiguracionDB";
             this.btnConfiguracionDB.Size = new System.Drawing.Size(105, 39);
+            this.btnConfiguracionDB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnConfiguracionDB.TabIndex = 41;
             this.btnConfiguracionDB.Text = "⚙ Config";
             this.btnConfiguracionDB.UseVisualStyleBackColor = false;
@@ -179,6 +183,7 @@
             this.dgwListado.AllowUserToAddRows = false;
             this.dgwListado.AllowUserToDeleteRows = false;
             this.dgwListado.AllowUserToOrderColumns = true;
+            this.dgwListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwListado.Location = new System.Drawing.Point(26, 108);
             this.dgwListado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -188,6 +193,9 @@
             this.dgwListado.RowTemplate.Height = 24;
             this.dgwListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwListado.Size = new System.Drawing.Size(1441, 542);
+            this.dgwListado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgwListado.TabIndex = 3;
             // 
             // btnbuscar
@@ -197,6 +205,7 @@
             this.btnbuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(120, 39);
+            this.btnbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnbuscar.TabIndex = 2;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = true;
@@ -208,6 +217,8 @@
             this.txtbuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(947, 30);
+            this.txtbuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtbuscar.TabIndex = 1;
             this.txtbuscar.TextChanged += new System.EventHandler(this.txtbuscar_TextChanged);
             this.txtbuscar.Validating += new System.ComponentModel.CancelEventHandler(this.txtbuscar_Validating);
@@ -306,6 +317,7 @@
             this.txtRepresent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRepresent.Name = "txtRepresent";
             this.txtRepresent.Size = new System.Drawing.Size(515, 30);
+            this.txtRepresent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.txtRepresent.TabIndex = 44;
             this.txtRepresent.TextChanged += new System.EventHandler(this.txtRepresent_TextChanged);
             // 
@@ -332,6 +344,7 @@
             this.cbBuscarDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbBuscarDo.Name = "cbBuscarDo";
             this.cbBuscarDo.Size = new System.Drawing.Size(121, 33);
+            this.cbBuscarDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbBuscarDo.TabIndex = 42;
             // 
             // chkEliminarDo
@@ -342,6 +355,7 @@
             this.chkEliminarDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkEliminarDo.Name = "chkEliminarDo";
             this.chkEliminarDo.Size = new System.Drawing.Size(80, 21);
+            this.chkEliminarDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkEliminarDo.TabIndex = 41;
             this.chkEliminarDo.Text = "Eliminar";
             this.chkEliminarDo.UseVisualStyleBackColor = true;
@@ -354,6 +368,7 @@
             this.btnBuscarDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscarDo.Name = "btnBuscarDo";
             this.btnBuscarDo.Size = new System.Drawing.Size(120, 39);
+            this.btnBuscarDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscarDo.TabIndex = 40;
             this.btnBuscarDo.Text = "Buscar";
             this.btnBuscarDo.UseVisualStyleBackColor = true;
@@ -365,6 +380,7 @@
             this.txtBuscarDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBuscarDo.Name = "txtBuscarDo";
             this.txtBuscarDo.Size = new System.Drawing.Size(428, 30);
+            this.txtBuscarDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBuscarDo.TabIndex = 39;
             this.txtBuscarDo.TextChanged += new System.EventHandler(this.txtBuscarDo_TextChanged);
             // 
@@ -374,6 +390,7 @@
             this.lblContDo.Location = new System.Drawing.Point(723, 649);
             this.lblContDo.Name = "lblContDo";
             this.lblContDo.Size = new System.Drawing.Size(75, 25);
+            this.lblContDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblContDo.TabIndex = 37;
             this.lblContDo.Text = "label11";
             // 
@@ -391,6 +408,7 @@
             this.cbBuscarDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbBuscarDe.Name = "cbBuscarDe";
             this.cbBuscarDe.Size = new System.Drawing.Size(153, 33);
+            this.cbBuscarDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbBuscarDe.TabIndex = 36;
             // 
             // chkEliminarDe
@@ -401,6 +419,7 @@
             this.chkEliminarDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkEliminarDe.Name = "chkEliminarDe";
             this.chkEliminarDe.Size = new System.Drawing.Size(80, 21);
+            this.chkEliminarDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkEliminarDe.TabIndex = 35;
             this.chkEliminarDe.Text = "Eliminar";
             this.chkEliminarDe.UseVisualStyleBackColor = true;
@@ -413,6 +432,7 @@
             this.btnBuscarDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscarDe.Name = "btnBuscarDe";
             this.btnBuscarDe.Size = new System.Drawing.Size(120, 39);
+            this.btnBuscarDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBuscarDe.TabIndex = 33;
             this.btnBuscarDe.Text = "Buscar";
             this.btnBuscarDe.UseVisualStyleBackColor = true;
@@ -424,6 +444,7 @@
             this.txtBuscarDe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtBuscarDe.Name = "txtBuscarDe";
             this.txtBuscarDe.Size = new System.Drawing.Size(428, 30);
+            this.txtBuscarDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtBuscarDe.TabIndex = 32;
             this.txtBuscarDe.TextChanged += new System.EventHandler(this.txtBuscarDe_TextChanged);
             this.txtBuscarDe.Validating += new System.ComponentModel.CancelEventHandler(this.txtBuscarDe_Validating);
@@ -535,6 +556,7 @@
             this.lblContDe.Location = new System.Drawing.Point(723, 305);
             this.lblContDe.Name = "lblContDe";
             this.lblContDe.Size = new System.Drawing.Size(75, 25);
+            this.lblContDe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblContDe.TabIndex = 22;
             this.lblContDe.Text = "label11";
             // 
@@ -589,6 +611,7 @@
             this.dgwDomicilio.AllowUserToAddRows = false;
             this.dgwDomicilio.AllowUserToDeleteRows = false;
             this.dgwDomicilio.AllowUserToOrderColumns = true;
+            this.dgwDomicilio.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwDomicilio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwDomicilio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EliminarDo});
@@ -600,6 +623,9 @@
             this.dgwDomicilio.RowTemplate.Height = 24;
             this.dgwDomicilio.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwDomicilio.Size = new System.Drawing.Size(804, 236);
+            this.dgwDomicilio.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgwDomicilio.TabIndex = 15;
             this.dgwDomicilio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwDomicilio_CellContentClick);
             this.dgwDomicilio.DoubleClick += new System.EventHandler(this.dgwDomicilio_DoubleClick);
@@ -619,6 +645,7 @@
             this.txtDirecc.Multiline = true;
             this.txtDirecc.Name = "txtDirecc";
             this.txtDirecc.Size = new System.Drawing.Size(515, 84);
+            this.txtDirecc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.txtDirecc.TabIndex = 14;
             // 
             // txtRazon
@@ -627,6 +654,7 @@
             this.txtRazon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRazon.Name = "txtRazon";
             this.txtRazon.Size = new System.Drawing.Size(515, 30);
+            this.txtRazon.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.txtRazon.TabIndex = 13;
             // 
             // txtRut
@@ -635,6 +663,7 @@
             this.txtRut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(515, 30);
+            this.txtRut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.txtRut.TabIndex = 11;
             this.txtRut.TextChanged += new System.EventHandler(this.txtRut_TextChanged);
             this.txtRut.Validated += new System.EventHandler(this.txtRut_Validated);
@@ -645,6 +674,7 @@
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(515, 30);
+            this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)));
             this.txtNombre.TabIndex = 10;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
@@ -691,6 +721,7 @@
             this.dgwDemandado.AllowUserToAddRows = false;
             this.dgwDemandado.AllowUserToDeleteRows = false;
             this.dgwDemandado.AllowUserToOrderColumns = true;
+            this.dgwDemandado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgwDemandado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwDemandado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.EliminarDe});
@@ -702,6 +733,8 @@
             this.dgwDemandado.RowTemplate.Height = 24;
             this.dgwDemandado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgwDemandado.Size = new System.Drawing.Size(804, 214);
+            this.dgwDemandado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgwDemandado.TabIndex = 3;
             this.dgwDemandado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwDemandado_CellContentClick);
             this.dgwDemandado.DoubleClick += new System.EventHandler(this.dgwDemandado_DoubleClick);

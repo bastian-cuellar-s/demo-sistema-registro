@@ -455,25 +455,25 @@ namespace CapaPresentacion
 
         private void demandadoLook()
         {
-            // Proteger si hay menos columnas de las esperadas
-            if (dgwDemandado.Columns.Count > 2)
+            if (dgwDemandado == null || dgwDemandado.Columns == null) return;
+
+            // Autoajuste a todo el ancho; evita tocar Width con columnas Fill
+            dgwDemandado.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            if (dgwDemandado.Columns.Count > 2 && dgwDemandado.Columns[2] != null)
             {
                 dgwDemandado.Columns[2].HeaderText = "Demandado";
-                dgwDemandado.Columns[2].Width = 332;
             }
 
-            if (dgwDemandado.Columns.Count > 3)
+            if (dgwDemandado.Columns.Count > 3 && dgwDemandado.Columns[3] != null)
             {
                 dgwDemandado.Columns[3].HeaderText = "Rut";
-                dgwDemandado.Columns[3].Width = 130;
             }
 
-            if (dgwDemandado.Columns.Count > 4)
+            if (dgwDemandado.Columns.Count > 4 && dgwDemandado.Columns[4] != null)
             {
                 dgwDemandado.Columns[4].HeaderText = "Representante Legal";
-                dgwDemandado.Columns[4].Width = 330;
             }
-
 
         }
 
@@ -786,19 +786,20 @@ namespace CapaPresentacion
 
         private void domicilioLook()
         {
-            // Proteger si hay menos columnas de las esperadas
-            if (dgwDomicilio.Columns.Count > 2)
+            if (dgwDomicilio == null || dgwDomicilio.Columns == null) return;
+
+            // Autoajuste a todo el ancho; evita tocar Width con Fill
+            dgwDomicilio.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            if (dgwDomicilio.Columns.Count > 2 && dgwDomicilio.Columns[2] != null)
             {
                 dgwDomicilio.Columns[2].HeaderText = "Domicilio";
-                dgwDomicilio.Columns[2].Width = 392;
             }
 
-            if (dgwDomicilio.Columns.Count > 3)
+            if (dgwDomicilio.Columns.Count > 3 && dgwDomicilio.Columns[3] != null)
             {
                 dgwDomicilio.Columns[3].HeaderText = "Diligencia";
-                dgwDomicilio.Columns[3].Width = 150;
             }
-
         }
 
         //Mostrar todo

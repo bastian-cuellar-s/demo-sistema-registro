@@ -449,8 +449,62 @@ namespace CapaPresentacion
             this.txtRut.Text = Convert.ToString(this.dgwDemandado.CurrentRow.Cells["rut"].Value);
             this.txtRepresent.Text = Convert.ToString(this.dgwDemandado.CurrentRow.Cells["representante"].Value);
             this.MostrarDott();
+            this.MostrarResumenDemandado(this.dgwDemandado.CurrentRow);
             this.tabControl1.SelectedIndex = 1;
             
+        }
+
+        private string GetCellStringSafe(DataGridViewRow row, string columnName)
+        {
+            if (row == null) return string.Empty;
+            if (row.DataGridView == null || row.DataGridView.Columns == null) return string.Empty;
+
+            bool hasColumn = false;
+            foreach (DataGridViewColumn col in row.DataGridView.Columns)
+            {
+                if (string.Equals(col.Name, columnName, StringComparison.OrdinalIgnoreCase))
+                {
+                    hasColumn = true;
+                    break;
+                }
+            }
+
+            if (!hasColumn) return string.Empty;
+
+            var value = row.Cells[columnName].Value;
+            if (value == null || value == DBNull.Value) return string.Empty;
+            return Convert.ToString(value);
+        }
+
+        private void MostrarResumenDemandado(DataGridViewRow row)
+        {
+            try
+            {
+                if (row == null) return;
+
+                string idTexto = GetCellStringSafe(row, "id_demandado");
+                int demandadoId;
+                if (!int.TryParse(idTexto, out demandadoId)) return;
+
+                string nombre = GetCellStringSafe(row, "nombre");
+                string rut = GetCellStringSafe(row, "rut");
+                string representante = GetCellStringSafe(row, "representante");
+
+                var domicilios = Ndomicilio.Mostrartt(demandadoId);
+
+                using (var resumen = new frmResumenDemandado(demandadoId, nombre, rut, representante, domicilios))
+                {
+                    resumen.ShowDialog(this);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    string.Format("No se pudo abrir el resumen: {0}", ex.Message),
+                    "Resumen de demandado",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void demandadoLook()

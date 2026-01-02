@@ -12,3 +12,16 @@ C:\Users\basti\Documents\SisSara\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyRe
 C:\Users\basti\Documents\SisSara\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\basti\Documents\SisSara\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\basti\Documents\SisSara\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\code\demo-sistema-registro\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\code\demo-sistema-registro\CapaDatos\obj\Debug\CapaDatos.dll
+C:\code\demo-sistema-registro\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\CapaDatos.dll
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\mscorlib.dll
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\es\mscorlib.resources.dll
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\normidna.nlp
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\normnfc.nlp
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\normnfd.nlp
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\normnfkc.nlp
+C:\code\demo-sistema-registro\CapaDatos\bin\Debug\normnfkd.nlp

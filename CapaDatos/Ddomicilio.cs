@@ -16,11 +16,35 @@ namespace CapaDatos
         private string texto_buscar;
         private int fk_id_demandado;
 
-        public int Id_domicilio { get => id_domicilio; set => id_domicilio = value; }
-        public string Direcc { get => direcc; set => direcc = value; }
-        public string Razon { get => razon; set => razon = value; }
-        public string Texto_buscar { get => texto_buscar; set => texto_buscar = value; }
-        public int Fk_id_demandado { get => fk_id_demandado; set => fk_id_demandado = value; }
+        public int Id_domicilio
+        {
+            get { return id_domicilio; }
+            set { id_domicilio = value; }
+        }
+
+        public string Direcc
+        {
+            get { return direcc; }
+            set { direcc = value; }
+        }
+
+        public string Razon
+        {
+            get { return razon; }
+            set { razon = value; }
+        }
+
+        public string Texto_buscar
+        {
+            get { return texto_buscar; }
+            set { texto_buscar = value; }
+        }
+
+        public int Fk_id_demandado
+        {
+            get { return fk_id_demandado; }
+            set { fk_id_demandado = value; }
+        }
 
         public Ddomicilio()
         {

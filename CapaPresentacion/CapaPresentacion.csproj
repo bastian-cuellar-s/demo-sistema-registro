@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmConfiguracionDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracionDB.Designer.cs">
+      <DependentUpon>frmConfiguracionDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDemandado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,12 +67,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{85eaabc0-3d74-49f5-87fb-d1528d62a2e5}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
       <Project>{6512eb03-f779-4df4-b7b9-a758ac451d1c}</Project>
       <Name>CapaNegocios</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmConfiguracionDB.resx">
+      <DependentUpon>frmConfiguracionDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDemandado.resx">
       <DependentUpon>frmDemandado.cs</DependentUpon>
     </EmbeddedResource>

@@ -18,12 +18,41 @@ namespace CapaDatos
         private string represent;
         private string texto_buscar;
 
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Rut { get => rut; set => rut = value; }
-        public string Direcc { get => direcc; set => direcc = value; }
-        public string Razon { get => razon; set => razon = value; }
-        public string Texto_buscar { get => texto_buscar; set => texto_buscar = value; }
-        public string Represent { get => represent; set => represent = value; }
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+
+        public string Rut
+        {
+            get { return rut; }
+            set { rut = value; }
+        }
+
+        public string Direcc
+        {
+            get { return direcc; }
+            set { direcc = value; }
+        }
+
+        public string Razon
+        {
+            get { return razon; }
+            set { razon = value; }
+        }
+
+        public string Texto_buscar
+        {
+            get { return texto_buscar; }
+            set { texto_buscar = value; }
+        }
+
+        public string Represent
+        {
+            get { return represent; }
+            set { represent = value; }
+        }
 
         public DTodos(){}
 

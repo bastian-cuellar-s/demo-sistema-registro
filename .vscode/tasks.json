@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Generar Instalador",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\generar-instalador.ps1"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Compilar Proyecto (Release)",
+            "type": "shell",
+            "command": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\MSBuild.exe",
+            "args": [
+                "${workspaceFolder}\\DemoSistemaRegistro\\DemoSistemaRegistro.csproj",
+                "/t:Build",
+                "/p:Configuration=Release",
+                "/v:minimal"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Limpiar Proyecto",
+            "type": "shell",
+            "command": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\MSBuild.exe",
+            "args": [
+                "${workspaceFolder}\\DemoSistemaRegistro\\DemoSistemaRegistro.csproj",
+                "/t:Clean",
+                "/p:Configuration=Release",
+                "/v:minimal"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

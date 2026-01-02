@@ -18,11 +18,35 @@ namespace CapaDatos
         private string texto_buscar;
 
 
-        public int Id_demandado { get => id_demandado; set => id_demandado = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
-        public string Rut { get => rut; set => rut = value; }
-        public string Texto_buscar { get => texto_buscar; set => texto_buscar = value; }
-        public string Represent { get => represent; set => represent = value; }
+        public int Id_demandado
+        {
+            get { return id_demandado; }
+            set { id_demandado = value; }
+        }
+
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+
+        public string Rut
+        {
+            get { return rut; }
+            set { rut = value; }
+        }
+
+        public string Texto_buscar
+        {
+            get { return texto_buscar; }
+            set { texto_buscar = value; }
+        }
+
+        public string Represent
+        {
+            get { return represent; }
+            set { represent = value; }
+        }
 
         public Ddemandado()
         {

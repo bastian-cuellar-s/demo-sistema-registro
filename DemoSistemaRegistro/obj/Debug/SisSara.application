@@ -4,17 +4,17 @@
   <description asmv2:publisher="SisSara" asmv2:product="SisSara" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" mapFileExtensions="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
-    <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
+    <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SisSara.exe.manifest" size="5886">
+    <dependentAssembly dependencyType="install" codebase="SisSara.exe.manifest" size="9881">
       <assemblyIdentity name="SisSara.exe" version="1.0.0.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4+13sbfZjHR8KnWdk0a5q3ctbpefal7SprKsBCdlqOI=</dsig:DigestValue>
+        <dsig:DigestValue>l0z3CPaQdw5aMHSrAyPzYf3Nl8FLsU/E08n5vthAu+M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

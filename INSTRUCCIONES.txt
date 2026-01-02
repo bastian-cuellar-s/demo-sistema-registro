@@ -1,0 +1,96 @@
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   INSTRUCCIONES DE CONFIGURACIÓN - SISTEMA DE REGISTRO      ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────┐
+│  CONFIGURAR LA CONEXIÓN A LA BASE DE DATOS                  │
+└──────────────────────────────────────────────────────────────┘
+
+  OPCIÓN 1 - DESDE LA APLICACIÓN (Recomendado)
+  ───────────────────────────────────────────────
+
+  1. Ejecuta la aplicación
+  2. Haz clic en el botón "⚙ Config" (esquina superior derecha)
+  3. Selecciona un ejemplo o escribe tu conexión
+  4. Haz clic en "Probar Conexión"
+  5. Si funciona, haz clic en "Guardar"
+  6. Reinicia la aplicación
+
+
+  OPCIÓN 2 - EDITAR ARCHIVO DE TEXTO
+  ────────────────────────────────────
+
+  1. Abre el archivo "conexion.config" con Bloc de notas
+  2. Edita la primera línea según tu servidor
+  3. Guarda el archivo
+  4. Reinicia la aplicación
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  EJEMPLOS DE CONFIGURACIÓN                                   │
+└──────────────────────────────────────────────────────────────┘
+
+  Para SERVIDOR LOCAL (sin problemas de red):
+  ──────────────────────────────────────────────
+  Data Source=localhost\SQLEXPRESS;Initial Catalog=DBSisSara;Integrated Security=true
+
+
+  Para SERVIDOR POR NOMBRE:
+  ──────────────────────────
+  Data Source=NOMBRE-PC\SQLEXPRESS;Initial Catalog=DBSisSara;Integrated Security=true
+
+
+  Para SERVIDOR POR IP:
+  ──────────────────────
+  Data Source=192.168.1.100\SQLEXPRESS;Initial Catalog=DBSisSara;Integrated Security=true
+
+
+  Con USUARIO Y CONTRASEÑA:
+  ───────────────────────────
+  Data Source=servidor\SQLEXPRESS;Initial Catalog=DBSisSara;User ID=usuario;Password=pass;Integrated Security=false
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  SOLUCIÓN DE PROBLEMAS                                       │
+└──────────────────────────────────────────────────────────────┘
+
+  ❌ "No se puede conectar al servidor"
+     → Verifica que SQL Server esté ejecutándose
+     → Confirma el nombre correcto del servidor
+     → Revisa el firewall de Windows
+
+  ❌ "Login failed"
+     → Verifica los permisos de Windows
+     → O usa usuario y contraseña SQL Server
+
+  ❌ "Network related error"
+     → Usa 'localhost' en vez de IP
+     → Verifica que el servicio SQL Server Browser esté activo
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  RECOMENDACIONES                                             │
+└──────────────────────────────────────────────────────────────┘
+
+  ✓ USA 'localhost' o nombre del servidor (NO la IP)
+    Esto evita problemas cuando cambia la configuración de red
+
+  ✓ SIEMPRE prueba la conexión antes de guardar
+
+  ✓ GUARDA una copia del archivo conexion.config que funciona
+
+
+┌──────────────────────────────────────────────────────────────┐
+│  AYUDA                                                       │
+└──────────────────────────────────────────────────────────────┘
+
+  Dentro de la aplicación:
+  - Haz clic en "⚙ Config"
+  - Presiona el botón "? Ayuda"
+
+
+═══════════════════════════════════════════════════════════════
+  Sistema de Registro - Versión con configuración flexible
+═══════════════════════════════════════════════════════════════

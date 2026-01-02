@@ -15,13 +15,24 @@ namespace CapaPresentacion
     {
         public frmDemandado()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error en InitializeComponent: " + ex, "Carga de formulario", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
 
         }
 
         //
         private void frmDemandado_Load(object sender, EventArgs e)
         {
+            // Verificar conexión a la base de datos al iniciar
+            VerificarConexionInicial();
+
             this.MostrarDe();
             this.HabilitarDe(false);
             this.BotonesDe();
@@ -33,6 +44,38 @@ namespace CapaPresentacion
             this.domicilioLook();
             this.todoLook();
 
+        }
+
+        /// <summary>
+        /// Verifica la conexión a la base de datos al iniciar la aplicación
+        /// </summary>
+        private void VerificarConexionInicial()
+        {
+            try
+            {
+                using (System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(CapaDatos.conexion.cn))
+                {
+                    conn.Open();
+                    // Conexión exitosa
+                }
+            }
+            catch (Exception ex)
+            {
+                DialogResult resultado = MessageBox.Show(
+                    string.Format("No se pudo conectar a la base de datos.\n\nError: {0}\n\n¿Desea configurar la conexión ahora?", ex.Message),
+                    "Error de Conexión",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    frmConfiguracionDB frmConfig = new frmConfiguracionDB();
+                    if (frmConfig.ShowDialog() == DialogResult.OK)
+                    {
+                        Application.Restart();
+                    }
+                }
+            }
         }
 
         private void MensajeOk(string mensaje)
@@ -123,8 +166,11 @@ namespace CapaPresentacion
 
         private void OcultarColumnasDe()
         {
-            this.dgwDemandado.Columns[0].Visible = false;
-            this.dgwDemandado.Columns[1].Visible = false;
+            // Proteger si no hay columnas cargadas aún
+            if (this.dgwDemandado.Columns.Count > 0)
+                this.dgwDemandado.Columns[0].Visible = false;
+            if (this.dgwDemandado.Columns.Count > 1)
+                this.dgwDemandado.Columns[1].Visible = false;
         }
 
         //Método Mostrar demandado
@@ -910,8 +956,42 @@ namespace CapaPresentacion
             this.BuscarRepresentDee();
         }
 
-      
+        /// <summary>
+        /// Abre el formulario de configuración de base de datos
+        /// </summary>
+        private void btnConfiguracionDB_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmConfiguracionDB frmConfig = new frmConfiguracionDB();
+                DialogResult resultado = frmConfig.ShowDialog();
+                
+                if (resultado == DialogResult.OK)
+                {
+                    // Si se guardó una nueva configuración, ofrecer reiniciar
+                    DialogResult reiniciar = MessageBox.Show(
+                        "La configuración se guardó correctamente.\n\n" +
+                        "¿Desea reiniciar la aplicación ahora para aplicar los cambios?",
+                        "Configuración Guardada",
+                        MessageBoxButtons.YesNo,
+                        MessageBoxIcon.Question);
+                    
+                    if (reiniciar == DialogResult.Yes)
+                    {
+                        Application.Restart();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Error al abrir configuración: {0}", ex.Message),
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
-    
+
 

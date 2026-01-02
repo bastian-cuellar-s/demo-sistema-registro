@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnConfiguracionDB = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.cbBuscartt = new System.Windows.Forms.ComboBox();
             this.lblTotal = new System.Windows.Forms.Label();
@@ -106,6 +107,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.btnConfiguracionDB);
             this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.cbBuscartt);
             this.tabPage1.Controls.Add(this.lblTotal);
@@ -157,6 +159,20 @@
             this.lblTotal.Size = new System.Drawing.Size(75, 25);
             this.lblTotal.TabIndex = 38;
             this.lblTotal.Text = "label11";
+            // 
+            // btnConfiguracionDB
+            // 
+            this.btnConfiguracionDB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(130)))), ((int)(((byte)(180)))));
+            this.btnConfiguracionDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfiguracionDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnConfiguracionDB.ForeColor = System.Drawing.Color.White;
+            this.btnConfiguracionDB.Location = new System.Drawing.Point(1362, 34);
+            this.btnConfiguracionDB.Name = "btnConfiguracionDB";
+            this.btnConfiguracionDB.Size = new System.Drawing.Size(105, 39);
+            this.btnConfiguracionDB.TabIndex = 41;
+            this.btnConfiguracionDB.Text = "⚙ Config";
+            this.btnConfiguracionDB.UseVisualStyleBackColor = false;
+            this.btnConfiguracionDB.Click += new System.EventHandler(this.btnConfiguracionDB_Click);
             // 
             // dgwListado
             // 
@@ -807,6 +823,7 @@
         private System.Windows.Forms.Label lblrepresent;
         private System.Windows.Forms.TextBox txtRepresent;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnConfiguracionDB;
         private System.Windows.Forms.ComboBox cbTPersona;
     }
 }

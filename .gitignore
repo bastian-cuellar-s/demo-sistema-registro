@@ -11,3 +11,17 @@
 *.cache
 *.application
 *.manifest
+
+# Permitir empaquetar los binarios Release en el repo
+!DemoSistemaRegistro/bin/
+DemoSistemaRegistro/bin/Debug/
+!DemoSistemaRegistro/bin/Release/**
+!CapaPresentacion/bin/
+CapaPresentacion/bin/Debug/
+!CapaPresentacion/bin/Release/**
+!CapaNegocios/bin/
+CapaNegocios/bin/Debug/
+!CapaNegocios/bin/Release/**
+!CapaDatos/bin/
+CapaDatos/bin/Debug/
+!CapaDatos/bin/Release/**

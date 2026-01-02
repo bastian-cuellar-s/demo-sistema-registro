@@ -33,7 +33,9 @@ namespace CapaPresentacion
 
         private void btnProbarConexion_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtCadenaConexion.Text))
+            string cadena = ObtenerCadenaSanitizada();
+
+            if (string.IsNullOrWhiteSpace(cadena))
             {
                 MessageBox.Show("Por favor, ingresa una cadena de conexión.", "Advertencia", 
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -46,7 +48,7 @@ namespace CapaPresentacion
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(txtCadenaConexion.Text))
+                using (SqlConnection conn = new SqlConnection(cadena))
                 {
                     conn.Open();
                     lblEstado.Text = "✓ Conexión exitosa";
@@ -70,14 +72,16 @@ namespace CapaPresentacion
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtCadenaConexion.Text))
+            string cadena = ObtenerCadenaSanitizada();
+
+            if (string.IsNullOrWhiteSpace(cadena))
             {
                 MessageBox.Show("Por favor, ingresa una cadena de conexión.", "Advertencia", 
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (ConfiguracionDB.GuardarCadenaConexion(txtCadenaConexion.Text))
+            if (ConfiguracionDB.GuardarCadenaConexion(cadena))
             {
                 MessageBox.Show("Configuración guardada correctamente.\n\nLa nueva conexión se usará al reiniciar la aplicación.", 
                     "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -133,6 +137,21 @@ TIPS:
 ✓ Prueba la conexión antes de guardar";
 
             MessageBox.Show(ayuda, "Ayuda de Configuración", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Devuelve la primera línea válida (sin espacios ni comentarios) para evitar guardar cadenas con espacios iniciales/finales
+        private string ObtenerCadenaSanitizada()
+        {
+            foreach (var raw in txtCadenaConexion.Lines)
+            {
+                var trimmed = (raw ?? string.Empty).Trim();
+                if (string.IsNullOrEmpty(trimmed)) continue;
+                if (trimmed.StartsWith("REM", StringComparison.OrdinalIgnoreCase)) continue;
+                return trimmed;
+            }
+
+            // Si no hay líneas múltiples, usar todo el texto trimmeado
+            return (txtCadenaConexion.Text ?? string.Empty).Trim();
         }
     }
 }

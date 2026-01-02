@@ -455,12 +455,24 @@ namespace CapaPresentacion
 
         private void demandadoLook()
         {
-            dgwDemandado.Columns[2].HeaderText = "Demandado";
-            dgwDemandado.Columns[3].HeaderText = "Rut";
-            dgwDemandado.Columns[4].HeaderText = "Representante Legal";
-            dgwDemandado.Columns[2].Width = 332;
-            dgwDemandado.Columns[3].Width = 130;
-            dgwDemandado.Columns[4].Width = 330;
+            // Proteger si hay menos columnas de las esperadas
+            if (dgwDemandado.Columns.Count > 2)
+            {
+                dgwDemandado.Columns[2].HeaderText = "Demandado";
+                dgwDemandado.Columns[2].Width = 332;
+            }
+
+            if (dgwDemandado.Columns.Count > 3)
+            {
+                dgwDemandado.Columns[3].HeaderText = "Rut";
+                dgwDemandado.Columns[3].Width = 130;
+            }
+
+            if (dgwDemandado.Columns.Count > 4)
+            {
+                dgwDemandado.Columns[4].HeaderText = "Representante Legal";
+                dgwDemandado.Columns[4].Width = 330;
+            }
 
 
         }
@@ -509,9 +521,13 @@ namespace CapaPresentacion
 
         private void OcultarColumnasDo()
         {
-            this.dgwDomicilio.Columns[0].Visible = false;
-            this.dgwDomicilio.Columns[1].Visible = false;
-            this.dgwDomicilio.Columns[4].Visible = false;
+            // Proteger si la grilla trae menos columnas
+            if (this.dgwDomicilio.Columns.Count > 0)
+                this.dgwDomicilio.Columns[0].Visible = false;
+            if (this.dgwDomicilio.Columns.Count > 1)
+                this.dgwDomicilio.Columns[1].Visible = false;
+            if (this.dgwDomicilio.Columns.Count > 4)
+                this.dgwDomicilio.Columns[4].Visible = false;
 
         }
 
@@ -770,10 +786,18 @@ namespace CapaPresentacion
 
         private void domicilioLook()
         {
-            dgwDomicilio.Columns[2].HeaderText = "Domicilio";
-            dgwDomicilio.Columns[3].HeaderText = "Diligencia";
-            dgwDomicilio.Columns[2].Width = 392;
-            dgwDomicilio.Columns[3].Width = 150;
+            // Proteger si hay menos columnas de las esperadas
+            if (dgwDomicilio.Columns.Count > 2)
+            {
+                dgwDomicilio.Columns[2].HeaderText = "Domicilio";
+                dgwDomicilio.Columns[2].Width = 392;
+            }
+
+            if (dgwDomicilio.Columns.Count > 3)
+            {
+                dgwDomicilio.Columns[3].HeaderText = "Diligencia";
+                dgwDomicilio.Columns[3].Width = 150;
+            }
 
         }
 
@@ -786,15 +810,35 @@ namespace CapaPresentacion
 
         private void todoLook()
         {
-            dgwListado.Columns[0].HeaderText = "Nombre";
-            dgwListado.Columns[1].HeaderText = "Rut";
-            dgwListado.Columns[2].HeaderText = "Domicilio";
-            dgwListado.Columns[3].HeaderText = "Diligencia";
-            dgwListado.Columns[4].HeaderText = "Representante";
-            dgwListado.Columns[0].Width = 350;
-            dgwListado.Columns[1].Width = 105;
-            dgwListado.Columns[2].Width = 350;
-            dgwListado.Columns[3].Width = 160;
+            // Proteger si hay menos columnas de las esperadas
+            if (dgwListado.Columns.Count > 0)
+            {
+                dgwListado.Columns[0].HeaderText = "Nombre";
+                dgwListado.Columns[0].Width = 350;
+            }
+
+            if (dgwListado.Columns.Count > 1)
+            {
+                dgwListado.Columns[1].HeaderText = "Rut";
+                dgwListado.Columns[1].Width = 105;
+            }
+
+            if (dgwListado.Columns.Count > 2)
+            {
+                dgwListado.Columns[2].HeaderText = "Domicilio";
+                dgwListado.Columns[2].Width = 350;
+            }
+
+            if (dgwListado.Columns.Count > 3)
+            {
+                dgwListado.Columns[3].HeaderText = "Diligencia";
+                dgwListado.Columns[3].Width = 160;
+            }
+
+            if (dgwListado.Columns.Count > 4)
+            {
+                dgwListado.Columns[4].HeaderText = "Representante";
+            }
 
         }
 
